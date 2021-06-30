@@ -12,7 +12,7 @@ OUTPUT_NAME="kernel.itb"
     exit 1
 }
 
-cp board/widora/mangopi/card/kernel.its "${BINARIES_DIR}"
+cp board/card/kernel.its "${BINARIES_DIR}"
 cd "${BINARIES_DIR}"
 "${MKIMAGE}" -f ${IMAGE_ITS} ${OUTPUT_NAME}
 rm ${IMAGE_ITS}
@@ -22,7 +22,7 @@ cp splash.bmp "${BINARIES_DIR}/"
 
 cd "${STARTDIR}/"
 
-board/widora/mangopi/card/scripts/mknanduboot.sh ${1}/${2} ${1}/u-boot-sunxi-with-nand-spl.bin
-support/scripts/genimage.sh ${1} -c board/widora/mangopi/card/genimage-sdcard.cfg
-support/scripts/genimage.sh ${1} -c board/widora/mangopi/card/genimage-nor.cfg
-support/scripts/genimage.sh ${1} -c board/widora/mangopi/card/genimage-nand.cfg
+board/card/scripts/mknanduboot.sh ${1}/${2} ${1}/u-boot-sunxi-with-nand-spl.bin
+support/scripts/genimage.sh ${1} -c board/card/genimage-sdcard.cfg
+support/scripts/genimage.sh ${1} -c board/card/genimage-nor.cfg
+support/scripts/genimage.sh ${1} -c board/card/genimage-nand.cfg

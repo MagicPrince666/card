@@ -15,7 +15,7 @@ sudo apt install wget unzip build-essential git bc swig libncurses-dev libpython
 ### Download BSP
 **Notice: Root permission is not necessery for download or extract.**
 ```shell
-git clone https://github.com/MagicPrince666/buildroot-tiny200
+git clone https://github.com/MagicPrince666/card
 ```
 
 ## Make the first build
@@ -26,7 +26,7 @@ git clone https://github.com/MagicPrince666/buildroot-tiny200
 
 **Generally, you only need to apply it once.**
 ```shell
-cd buildroot-tiny200
+cd card
 make prince_card_defconfig
 ```
 
